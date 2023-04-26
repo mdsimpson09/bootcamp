@@ -1,0 +1,87 @@
+Marli@Marlis-MBP git % git init 
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+
+
+1. Marli@Marlis-MBP bootcamp % mkdir learn_git_again
+Marli@Marlis-MBP bootcamp % pwd
+/Users/Marli_1/bootcamp
+Marli@Marlis-MBP bootcamp % ls
+democodes			notes.pages
+first_folder			study session notes.pages
+fundamentals			unit 7
+git				unit 8
+js-todos-solution		unit 9
+learn_git_again			web:http.pages
+memory-game
+Marli@Marlis-MBP bootcamp % 
+
+Marli@Marlis-MBP bootcamp % cd learn_git_again
+Marli@Marlis-MBP learn_git_again % touch third.txt
+Marli@Marlis-MBP learn_git_again % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/Marli_1/Bootcamp/learn_git_again/.git/
+Marli@Marlis-MBP learn_git_again % git add third.txt
+Marli@Marlis-MBP learn_git_again % git commit -m "adding third.txt"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Marli@Marlis-MBP.(none)')
+Marli@Marlis-MBP learn_git_again % 
+
+
+Marli@Marlis-MBP learn_git_again % git log 
+fatal: your current branch 'master' does not have any commits yet
+Marli@Marlis-MBP learn_git_again % 
+
+
+git add fourth.txt
+Marli@Marlis-MBP learn_git_again % git commit -m “adding fourth.txt
+[master (root-commit) 52a1563] “adding
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+Marli@Marlis-MBP learn_git_again % 
+
+error: pathspec 'third.txt”' did not match any file(s) known to git
+Marli@Marlis-MBP learn_git_again % rm third.txt
+
+git log 
+commit 52a1563e9855a0a9723e1877bfb07c30376134a1 (HEAD -> master)
+Author: Your Name <mdsimpson09@gmail.com>
+Date:   Tue Apr 25 13:43:08 2023 -0400
+
+    “adding
+Marli@Marlis-MBP learn_git_again % 
+
+ - git config --global --list
+error: cannot run “cat”: No such file or directory
+user.name=Your Name
+user.email=mdsimpson09@gmail.com
+core.pager=“cat”
+Marli@Marlis-MBP learn_git_again % 
